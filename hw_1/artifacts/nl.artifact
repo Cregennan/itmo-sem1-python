@@ -1,0 +1,77 @@
+> python nl.py in.txt
+
+----in.txt----
+weifebwif
+weiubiuw
+qbiuguewg
+iubwegiuiweg
+qiqfbq
+bibweig
+qibuqbfi
+==============
+
+----stdout-----
+0 weifebwif
+1 weiubiuw
+2 qbiuguewg
+3 iubwegiuiweg
+4 qiqfbq
+5 bibweig
+6 qibuqbfi
+===============
+
+
+
+> python nl.py barabere
+
+---no-such-file---
+==================
+
+-----stdout-------
+File barabere does not exist
+==================
+
+
+
+> python nl.py -
+
+------stdin------
+fbwfwfbweig
+weiugbewiug
+wgibewigwu
+weguiewbige
+uweigbuiewg
+weigui
+ewgiubiuw
+
+=================
+
+-----stdout------
+0 fbwfwfbweig
+1 weiugbewiug
+2 wgibewigwu
+3 weguiewbige
+4 uweigbuiewg
+5 weigui
+6 ewgiubiuw
+=================
+
+
+> python nl.py
+
+------------------stdin-------------------
+the sea of night
+raging fire in our veins
+as life will wax and wayne
+like music we`ll hear your waves once more
+and sail to another shore
+
+===========================================
+
+------------------stdout--------------------
+0 the sea of night
+1 raging fire in our veins
+2 as life will wax and wayne
+3 like music we`ll hear your waves once more
+4 and sail to another shore
+============================================

@@ -1,0 +1,75 @@
+> python tail.py tail.py artifacts/nl.artifact
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RESULT~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+==> tail.py <==
+        if os.path.isfile(name) and os.path.exists(name):
+            with open(name, 'r') as file:
+                print(f'==> {name} <==')
+                print('\n'.join(file.read().splitlines()[-10:]))
+        else:
+            print(f'{name}: No such file')
+
+
+if __name__ == '__main__':
+    main()
+==> artifacts/nl.artifact <==
+
+===========================================
+
+------------------stdout--------------------
+0 the sea of night
+1 raging fire in our veins
+2 as life will wax and wayne
+3 like music we`ll hear your waves once more
+4 and sail to another shore
+============================================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RESULT~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+> python tail.py
+
+~~~~~~~~~~~~~~~~~~~STDIN~~~~~~~~~~~~~~~~~~~~~~
+wfbewigebuwewig
+wiugbiewbg
+weibgewbg
+weigbiewgui
+iwuegbewg
+wigbewgewg
+wieugbewigueiw
+weguiebgiewbgiew
+gewuigiewbigbeww
+gewiugbewiugbiew
+gewuigewiubguibewig
+weigubiewbugbewig
+ewgiugbeuwbigwebi
+egiubewigbuweg
+wegiuebeibguebi
+wegeigwebigewbiugbwe
+wiuewbgbweibgiweg
+ewgewigbegewigwegbuwb
+wegiewubgiebugebgw
+egiewbugweuigewbg
+
+~~~~~~~~~~~~~~~~~~~STDIN~~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~RESULT~~~~~~~~~~~~~~~~~~~~~~
+weigbiewgui
+iwuegbewg
+wigbewgewg
+wieugbewigueiw
+weguiebgiewbgiew
+gewuigiewbigbeww
+gewiugbewiugbiew
+gewuigewiubguibewig
+weigubiewbugbewig
+ewgiugbeuwbigwebi
+egiubewigbuweg
+wegiuebeibguebi
+wegeigwebigewbiugbwe
+wiuewbgbweibgiweg
+ewgewigbegewigwegbuwb
+wegiewubgiebugebgw
+egiewbugweuigewbg
+~~~~~~~~~~~~~~~~~~~RESULT~~~~~~~~~~~~~~~~~~~~~~

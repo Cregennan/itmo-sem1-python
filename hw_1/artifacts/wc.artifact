@@ -1,0 +1,45 @@
+> wc wc.py artifacts/nl.artifact
+
+=======================RESULT=========================
+      49     146    1561 wc.py
+      76     139    1109 artifacts/nl.artifact
+     125     285    2670 total
+======================================================
+
+> python wc.py wc.py artifacts/nl.artifact
+
+=======================RESULT=========================
+      49     146    1561 wc.py
+      76     139    1109 artifacts/nl.artifact
+     125     285    2670 total
+======================================================
+
+
+
+> wc
+
+==================STDIN=======================
+i name the stars over your cauldron
+and all that lies beneath your waves
+throwing my voice into your shadows
+the underworld the darkest place
+==================STDIN=======================
+
+==================RESULT======================
+       4      25     142
+==================RESULT======================
+
+
+
+> python wc.py
+
+==================STDIN=======================
+i name the stars over your cauldron
+and all that lies beneath your waves
+throwing my voice into your shadows
+the underworld the darkest place
+==================STDIN=======================
+
+==================RESULT======================
+       4      25     142
+==================RESULT======================
